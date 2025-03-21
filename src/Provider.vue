@@ -27,5 +27,6 @@ if (authToken) {
 .app-wrapper {
   height: 100%;
   width: 100%;
+  /* padding: 50px; */
 }
 </style>

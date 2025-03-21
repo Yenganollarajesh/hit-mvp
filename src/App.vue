@@ -31,6 +31,8 @@ init();
 .app-wrapper {
   height: 100%;
   width: 100%;
+  /* padding: 50px; */
+  overflow: hidden;
 }
 
 #remIndicator {
@@ -44,5 +46,30 @@ init();
   z-index: 1;
   pointer-events: none;
   visibility: hidden;
+}
+</style>
+
+<style lang="scss">
+/* total width */
+.app-wrapper::-webkit-scrollbar {
+  background-color: #fff;
+  width: 16px;
+}
+
+/* background of the scrollbar except button or resizer */
+.app-wrapper::-webkit-scrollbar-track {
+  background-color: #fff;
+}
+
+/* scrollbar itself */
+.app-wrapper::-webkit-scrollbar-thumb {
+  background-color: #babac0;
+  border-radius: 16px;
+  border: 4px solid #fff;
+}
+
+/* set button(top and bottom of the scrollbar) */
+.app-wrapper::-webkit-scrollbar-button {
+  display: none;
 }
 </style>

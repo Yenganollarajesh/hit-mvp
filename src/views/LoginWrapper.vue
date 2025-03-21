@@ -1,6 +1,7 @@
 <script setup>
 import { useUser } from '@/stores/user.store';
 import queryString from 'query-string';
+import DiscoverUserRolesVue from './DiscoverUserRoles.vue';
 
 const useUserStore = useUser();
 
@@ -25,8 +26,9 @@ if (tokenParams.code) {
 .login-wrapper {
   height: 100%;
   width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  // display: flex;
+  // align-items: center;
+  // justify-content: center;
 }
+
 </style>
