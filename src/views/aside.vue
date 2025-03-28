@@ -10,7 +10,9 @@
 
         </div>
         <div class="section-view-wrapper">
-            <DiscoverUserRoles/>
+            
+            <FormPage/>
+            <!-- <DiscoverUserRoles/> -->
              <!-- <DiscoverFeaturesVue/> -->
         </div>
     </div>
@@ -19,6 +21,8 @@
 <script setup>
 import DiscoverFeaturesVue from './DiscoverFeatures.vue';
 import DiscoverUserRoles from './DiscoverUserRoles.vue';
+import FormPage from '../forms/FormPage.vue';
+
 </script>
 
 <style lang="scss" scoped>
