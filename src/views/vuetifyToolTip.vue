@@ -14,7 +14,7 @@
           :class="[positionClass]"
           ref="tooltip"
         >
-          <slot name="content"></slot>
+          {{ text }}
         </div>
       </transition>
     </div>
@@ -27,6 +27,9 @@
     position: {
       type: String,
       default: "top",
+    },
+    text: {
+      type: String,
     },
   });
   

@@ -4,6 +4,9 @@ import LoginWrapper from '../views/LoginWrapper.vue';
 import DiscoverUserRoles from '../views/DiscoverUserRoles.vue';
 import Aside from '../views/aside.vue';
 import DiscoverFeatures from '../views/DiscoverFeatures.vue';
+import StartOptions from '../views/StartOptions.vue';
+import FormPage from '../forms/FormPage.vue';
+import SubmitPage from '../forms/SubmitPage.vue';
 
 const router = createRouter({
   // history: createWebHistory(import.meta.env.BASE_URL),
@@ -34,6 +37,22 @@ const router = createRouter({
       name: 'discoverFeatures',
       component: DiscoverFeatures,
     },
+    {
+      path: '/start',
+      name: 'startOptions',
+      component: StartOptions,
+    },
+    {
+      path: '/form-basic-info',
+      name: 'formBasicInfo',
+      component: FormPage,
+    },
+    {
+      path: '/submit-page',
+      name: 'submitPage',
+      component: SubmitPage,
+    },
+
   ],
 });
 

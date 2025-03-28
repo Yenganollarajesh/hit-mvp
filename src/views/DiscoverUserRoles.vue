@@ -5,26 +5,20 @@
         <div class="user-roles-header-buttons-wrapper">
           <!-- <div class="add-new-user-role-button" @click="openSidePanel(false)">Add new user role</div>
           <div class="continue-button">Continue</div> -->
-          <CustomTooltip position="bottom">
+          <CustomTooltip :text="'You can add a new user role'" position="bottom">
           <template #activator>
             <div class="add-new-user-role-button" @click="openSidePanel(false)">
               Add new user role
             </div>
           </template>
-          <template #content>
-            <span>You can add a new user role</span>
-          </template>
         </CustomTooltip>
 
         <!-- Continue button with tooltip -->
-        <CustomTooltip position="bottom">
+        <CustomTooltip :text="'Continue to next step'" position="bottom">
           <template #activator>
             <div class="continue-button">
               Continue
             </div>
-          </template>
-          <template #content>
-            <span>Continue to next step</span>
           </template>
         </CustomTooltip>
         </div>

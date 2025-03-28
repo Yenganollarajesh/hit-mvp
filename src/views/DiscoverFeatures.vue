@@ -5,36 +5,27 @@
         <div class="user-roles-header-buttons-wrapper">
           <!-- <div class="add-new-user-role-button" @click="openSidePanel(false)">Add new user role</div>
           <div class="continue-button">Continue</div> -->
-          <CustomTooltip position="bottom">
+          <CustomTooltip :text="`You can merge multiple feature's`" position="bottom">
           <template #activator>
             <div class="add-new-user-role-button" @click="openSidePanel(false)">
               Manage features
             </div>
           </template>
-          <template #content>
-            <span>You can merge multiple feature's</span>
-          </template>
         </CustomTooltip>
-          <CustomTooltip position="bottom">
+          <CustomTooltip :text="`You can add new feature's for your app `" position="bottom">
           <template #activator>
             <div class="add-new-user-role-button" @click="openSidePanel(false)">
               Add new feature
             </div>
           </template>
-          <template #content>
-            <span>You can add new feature's for your app </span>
-          </template>
         </CustomTooltip>
 
         <!-- Continue button with tooltip -->
-        <CustomTooltip position="bottom">
+        <CustomTooltip :text="'Continue to next step'" position="bottom">
           <template #activator>
             <div class="continue-button">
               Continue
             </div>
-          </template>
-          <template #content>
-            <span>Continue to next step</span>
           </template>
         </CustomTooltip>
         </div>
