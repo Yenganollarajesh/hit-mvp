@@ -112,7 +112,13 @@ function editForm() {
   display: flex;
   flex-direction: column;
   align-items: start;
+  justify-content: center;
+  padding: 16px;
+  width: 100%;
   .text-wrapper {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 1.625rem;
   }
   .submit-page-wrapper{
 
@@ -121,17 +127,25 @@ function editForm() {
     display:flex;
     justify-content:end;
     align-items: end;
+    width: 100%;
+    gap: 1rem;
     .edit-button{
-      height:30px;
-      min-width:90px;
-      text-align:center;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
+      // height:30px;
+      // min-width:90px;
+      // text-align:center;
+      // display: flex;
+      // flex-direction: column;
+      // justify-content: center;
+      // align-items: center;
+      padding: .5rem 1rem;
       border: 1px solid #000000;
       border-radius: 5px;
       background:transparent;
+      cursor: pointer;
+      &:hover{
+        background: #d3d3d3;
+        border-color: #d3d3d3;
+      }
     }
     .submit-button {
       height:30px;
@@ -143,7 +157,8 @@ function editForm() {
       align-items: center;
       border-radius: 5px;
       color:#ffffff;
-      background: blue;
+      background: #6d78d5;
+      cursor: pointer;
     }
   }
 }

@@ -8,8 +8,12 @@
           class="question-answer-wrapper"
         > 
           <div class="question-wrapper">
-            <div class="question-number">{{index + 1 }}.</div>
-            <div class="question-arrow-svg">arrow-svg</div>
+            <div class="question-number">{{index + 1 }}</div>
+            <div class="question-arrow-svg">
+              <svg width="16" height="10" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5 12h14M12 5l7 7-7 7" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
             <div class="question-text">{{ eachquestion.question }}</div>
           </div>
           
@@ -49,6 +53,23 @@ let { page , index } = toRefs(props);
 </script>
 
 <style lang="scss" scoped>
-
+.question-answer-wrapper{
+  .question-wrapper{
+    display: flex;
+    align-items: center;
+    .question-text{
+      font-size: 1.125rem;
+      font-weight: 600;
+      margin-bottom: 5px;
+    }
+  }
+  .eachQuestion-wrapper{
+    .answer-wrapper{
+      font-size: 14px;
+      color: rgba(33, 37, 41, .75);
+      padding: 0px 16px 8px 20px ;
+    }
+  }
+}
 
 </style>

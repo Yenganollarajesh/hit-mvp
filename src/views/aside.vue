@@ -48,6 +48,7 @@ import FormPage from '../forms/FormPage.vue';
 .section-view-wrapper {
     height: 100%;
     overflow: auto;
+    display: flex;
 
     /* WebKit Browsers (Chrome, Edge, Safari) */
     &::-webkit-scrollbar {
